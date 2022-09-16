@@ -1,0 +1,9 @@
+main {
+    background-color: rgb(146, 172, 199); 
+    padding: 4px; 
+    color: black
+}
+
+h1, h2 {
+    color: blue;
+}
