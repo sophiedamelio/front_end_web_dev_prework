@@ -96,6 +96,11 @@ aside {
     grid-area: aside;
 }
 
+#formInfo {
+    font-size: 14px;
+    font-style: italic;
+}
+
 /* header #headshot, header #siteName, header #menu {
     display: inline;
     vertical-align: middle;
