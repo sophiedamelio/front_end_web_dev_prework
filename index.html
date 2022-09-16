@@ -4,69 +4,75 @@
         <link rel="stylesheet" href="style.css">
     </head>
     <body>
-        <header>
-            <h1>Sophie Damelio</h1>
-            <img width="100px" src="img/ACC_Gradient_Light_6.jpg" alt="Gradient Picture, light and pastel colors"/>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="privacy.html">Privacy</a></li>
-        </ul>
-        </header>
+        <div class="container">
+            <header>
+                <img id="headshot" src="img/ACC_Gradient_Light_6.jpg" alt="Gradient Picture, light and pastel colors"/>
+                <h1 id="siteName">Sophie Damelio</h1>
+            <ul id="menu">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="privacy.html">Privacy</a></li>
+            </ul>
+            </header>
 
-        <main>
-            <p><strong>Purpose:</strong>this is a resume (or CV) to help me get a job in web dev</p>
-            <h2>Experience</h2>
-            <div>
-                <p>CVS - Healthcare Company - 2-10-2020</p>
-                <p>Worked register and did inventory</p>
-            </div>
-            <div>
-                <p>McDonald's - Not a Healthcare Company - 2-10-2020</p>
-                <p>Worked register and did inventory</p>
-            </div>
-        </main>
+            <main>
+                <p><strong>Purpose:</strong>this is a resume (or CV) to help me get a job in web dev</p>
+                <h2>Experience</h2>
+                <div class="experience">
+                    <p class="title">CVS - Healthcare Company - 2-10-2020</p>
+                    <p>Worked register and did inventory</p>
+                </div>
+                <div class="experience">
+                    <p class="title">McDonald's - Not a Healthcare Company - 2-10-2020</p>
+                    <p>Worked register and did inventory</p>
+                </div>
+                <div class="experience">
+                    <p class="title">Self Employed - Not a Healthcare Company - 2-10-2020</p>
+                    <p>Worked register and did inventory</p>
+                </div>
+            </main>
 
-        <aside>
-            <h2>Contact Me</h2>
-            <form>
-                <div>
-                    <label for="fullName">Full Name</label>
-                </div>
-                <div>
-                    <input id="fullName" type="text" />
-                </div>
-                <div>
-                    <label for="email">Full Name</label>
-                </div>
-                <div>
-                    <input id="email" type="email"/>
-                </div>
-                <div>
-                    <label for="subject">Email</label>
-                </div>
-                <div>
-                    <select id="subject">
-                        <option>Job Offer</option>
-                        <option>Email</option>
-                        <option>Complaint</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="msg">Message</label>
-                </div>
-                <div>
-                    <textarea id="msg" rows="4"></textarea>
-                </div>
-                <div>
-                    <input type="submit" value="Send Mail"/>
-                </div>
+            <aside>
+                <h2>Contact Me</h2>
+                <form>
+                    <div>
+                        <label for="fullName">Full Name</label>
+                    </div>
+                    <div>
+                        <input id="fullName" type="text" />
+                    </div>
+                    <div>
+                        <label for="email">Full Name</label>
+                    </div>
+                    <div>
+                        <input id="email" type="email"/>
+                    </div>
+                    <div>
+                        <label for="subject">Email</label>
+                    </div>
+                    <div>
+                        <select id="subject">
+                            <option>Job Offer</option>
+                            <option>Email</option>
+                            <option>Complaint</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="msg">Message</label>
+                    </div>
+                    <div>
+                        <textarea id="msg" rows="4"></textarea>
+                    </div>
+                    <div>
+                        <input type="submit" value="Send Mail"/>
+                    </div>
 
-            </form>
-        </aside>
+                </form>
+            </aside>
 
-        <footer>
-            &copy; 2022 Copyright - Sophie Damelio
-        </footer>
+            <footer>
+                &copy; 2022 Copyright - Sophie Damelio
+            </footer>
+        </div>
     </body>
 </html>

@@ -1,9 +1,102 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 main {
     background-color: rgb(146, 172, 199); 
     padding: 4px; 
-    color: black
+    color: black;
+    grid-area: main;
 }
 
 h1, h2 {
     color: blue;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
+
+
+
+
+#headshot {
+    border: 1px solid pink;
+    padding: 2px;
+    margin: 8px;
+    border-radius: 500px;
+    width: 50px;
+    height: 50px;   
+}
+
+.experience {
+    border: inset 1px;
+    margin-bottom: 4px;
+    padding: 4px;
+    background-color: white;
+    color:pink;
+}
+
+.experience .title {
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    color: lightblue;
+    background-color: black;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+    grid-area: footer;
+}
+
+#menu li {
+    display: inline;
+    padding: 8px;
+    background-color: gray;
+}
+
+#menu li a {
+    color: white !important;
+    text-decoration: none;
+}
+
+#menu li.active {
+    background-color: darkslateblue;
+}
+
+#menu {
+    float: right;
+}
+
+
+header {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    grid-area: header;
+}
+
+header #menu {
+    margin-left: auto;
+}
+
+
+.container {
+    display: grid;
+    grid-template-areas: 
+    "header header"
+    "main aside"
+    "footer footer";
+    grid-template-columns: auto 200px;
+    grid-gap: 8px;
+}
+
+aside {
+    grid-area: aside;
+}
+
+/* header #headshot, header #siteName, header #menu {
+    display: inline;
+    vertical-align: middle;
+} */
