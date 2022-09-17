@@ -1,15 +1,6 @@
 // index.js
 
-
-
-// var number = 5;
-// let herName = "Sophie ";
-
-// number = 12;
-// herName = "Pluralsight ";
-
-// document.writeln(herName + number);
-// alert("hello World");
+import Contact from "./Contact.js";
 
 const formInfo = document.getElementById("formInfo");
 const experiences = document.getElementsByClassName("experience");
@@ -46,7 +37,9 @@ contactForm.addEventListener("submit", sendMessage);
 
 function sendMessage(event) {
     event.preventDefault();
-    showMessage("Please wait, sending your email");
+    const contact = new Contact(contactForm);
+    showMessage("Please wait, sending your email.....Thank You: " + contact.fullName);
+    contact.send();
 }
 
 
