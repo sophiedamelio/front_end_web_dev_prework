@@ -1,1 +1,1 @@
-this is a readme
+This is the code that I wrote for the course [Front-End Web Development Quick Start With HTML5, CSS, and JavaScript](https://app.pluralsight.com/library/courses/html5-javascript-css-front-end-web-app/table-of-contents).
